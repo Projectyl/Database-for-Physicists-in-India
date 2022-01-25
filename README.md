@@ -1,6 +1,60 @@
-## Scientists Database Creator
+# Scientists Database Creator
 
-- The intention is to crawl through various website to create a database of (Indian) scientists working in physics and related fields
+## What's the Big Idea
+
+The python programs will crawl through the listed Indian institutes websites and collect information about the scientists working in physics and other related fields. The data will be classified according to research topics of the scientists, and then made available through a website. Viewers will then be able to find the list of Indian scientists working in a particular field like, say, high energy physics.
+
+## List of Institutes
+
+<details>
+  <summary>IITs</summary>
+
+| Institute | Status |
+| :--- | :---: |
+| IIT Kharagpur | Pending |
+| IIT Bombay | Pending |
+| IIT Madras | Pending |
+| IIT Kanpur | Pending |
+| IIT Delhi | Pending |
+| IIT Guwahati | Pending |
+| IIT Roorkee | Pending |
+| IIT Ropar | Pending |
+| IIT Bhubaneswar | Pending |
+| IIT Gandhinagar | Pending |
+| IIT Hyderabad | Pending |
+| IIT Jodhpur | Pending |
+| IIT Patna | Pending |
+| IIT Indore | Pending |
+| IIT Mandi | Pending |
+| IIT (BHU) Varanasi | Pending |
+| IIT Palakkad | Pending |
+| IIT Tirupati | Pending |
+| IIT (ISM) Dhanbad | Pending |
+| IIT Bhilai | Pending |
+| IIT Dharwad | Pending |
+| IIT Jammu | Pending |
+| IIT Goa | Pending |
+
+</details>
+
+<details>
+
+  <summary>IISERs</summary>
+
+| Institute | Status |
+| :--- | :---: |
+| IISER Kolkata	 | Pending |
+| IISER Pune | Pending |
+| IISER Mohali | Pending |
+| IISER Bhopal | Pending |
+| IISER Thiruvananthapuram | Pending |
+| IISER Tirupati | Pending |
+| IISER Berhampu | Pending |
+
+</details>
+
+
+## Details of the algorithm
 
 - Results will be stored in the following structure
 
@@ -19,9 +73,6 @@ project root
         |
         |   low_dimensional_materials.csv
 ```
-
-
-- Websites to crawl include google scholar and those of institutes like the IITs, IISERs, etc.
 
 - The code will be structured in the form of separate modules for each website.
 - Each module outputs results in a common format. This common format will be a dictionary, of the form
