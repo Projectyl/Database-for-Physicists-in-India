@@ -1,6 +1,6 @@
 # Scientists Database Creator
 
-## What's the Big Idea
+## What's the Big Idea?
 
 The python programs will crawl through the listed Indian institutes websites and collect information about the scientists working in physics and other related fields. The data will be classified according to research topics of the scientists, and then made available through a website. Viewers will then be able to find the list of Indian scientists working in a particular field like, say, high energy physics.
 
@@ -56,7 +56,7 @@ The python programs will crawl through the listed Indian institutes websites and
 
 ## Details of the algorithm
 
-- Results will be stored in the following structure
+- Files will be stored in the following structure
 
 ```
 project root
