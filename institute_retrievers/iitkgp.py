@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 import time
 
-headings = open('../headings.txt' ,'r').read().strip().split('\n')
+headings = json.load(open('../info_files/headings.json' ,'r'))
 folder = '../institute_data/'
 if not os.path.exists(folder): os.mkdir(folder)
 
@@ -17,7 +17,7 @@ prof_details = []
 #Scraping code
 block = soup.find_all('div', attrs = {'class':'col-lg-12'})[2]
 base_url = 'http://www.iitkgp.ac.in'
-for i in tqdm(block.findChildren('div', attrs = {'class':'col-lg-12'})[:5], desc="IIT KGP"):
+for i in tqdm(block.findChildren('div', attrs = {'class':'col-lg-12'}), desc="IIT KGP"):
     for j in i.findChildren('div', attrs = {'class':'row'}):
         prof_dict = {}
         for k in j.findChildren('h3'):

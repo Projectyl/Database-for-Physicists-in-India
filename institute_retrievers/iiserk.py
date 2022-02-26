@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 import time
 
-headings = open('../headings.txt' ,'r').read().strip().split('\n')
+headings = json.load(open('../info_files/headings.json' ,'r'))
 folder = '../institute_data/'
 if not os.path.exists(folder): os.mkdir(folder)
 
