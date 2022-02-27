@@ -18,7 +18,11 @@ for file in files:
     for prof in data:
         for key,val in categories.items():
             if True in [interest.lower() in val for interest in prof[headings[3]]]: cat_data[key].append(prof)
-            
+poppable_id = []
+for other_prof in reversed(cat_data['Others']):
+    if other_prof in [prof for cat, profs in cat_data.items() for prof in profs if cat != 'Others']:
+        cat_data['Others'].remove(other_prof)
+
 for key in cat_data:
     if len(cat_data[key]) == 0:
         continue
