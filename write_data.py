@@ -1,3 +1,5 @@
+#!/bin/python
+
 import json
 import os
 import yaml
@@ -8,7 +10,7 @@ folder = './institute_data/'
 cat_folder = "./category_data/"
 if not os.path.exists(cat_folder): os.mkdir(cat_folder)
 
-files = [folder+insti+".json" for insti in json.load(open('./info_files/institutes.json', 'r'))]
+files = ['./institute_data/'+file for file in os.listdir('./institute_data/')]
 cat_data = {}
 for key in categories:
     cat_data[key] = []
